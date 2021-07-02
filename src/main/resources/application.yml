@@ -1,0 +1,15 @@
+# ˝æ›‘¥
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    username: root
+    url: jdbc:mysql:///4_16_mybatistest?useUnicode=true&characterEncoding=utf8
+# sql”Ôæ‰
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  servlet:
+    context-path: /
+#” œ‰

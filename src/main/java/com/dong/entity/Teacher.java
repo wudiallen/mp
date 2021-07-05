@@ -40,5 +40,4 @@ public class Teacher implements Serializable {
     @ApiModelProperty(value = "教师邮箱")
     private String temail;
 
-
 }

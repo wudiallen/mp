@@ -19,7 +19,7 @@ import javax.mail.internet.MimeMessage;
 public class MsmServiceImpl  {
 
     @Autowired
-    JavaMailSender mailSender;
+    private  JavaMailSender mailSender;
 
     @Value("${spring.mail.username}")
     private String username;
@@ -46,8 +46,6 @@ public class MsmServiceImpl  {
         } catch (MessagingException e) {
             e.printStackTrace();
         }
-
-
         mailSender.send(mimeMessage);
         logger.info("邮件发送成功");
         return true;
